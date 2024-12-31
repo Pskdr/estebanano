@@ -1,0 +1,37 @@
+.container {
+  color: black;
+  display: flex;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Ocupa toda la pantalla */
+  background-color: #FFF2BF;
+}
+
+.leftPanel {
+  width: 20%;
+  margin-top: 20px;
+  padding-left: 20px;
+  background-color: #FFF2BF;
+  /* Opcional: para diferenciar */
+
+  @media (max-width: 1200px) {
+      width: 40%;
+      
+    }
+}
+
+.rightPanel {
+  width: 80%;
+  background-color: #FFF2BF;
+  /* Opcional: para diferenciar */
+  @media (max-width: 1200px) {
+      width: 60%;
+  
+    }
+}
+
+.justPanel {
+  margin: 20px; 
+  background-color: #FFF2BF;
+  /* Opcional: para diferenciar */
+}

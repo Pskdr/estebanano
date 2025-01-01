@@ -24,7 +24,7 @@ export default function slidebar({
     { title: 'Chef burger - Refresh redes' },
   ];
   return (
-    <div className={styles.container}>
+    <div className={isMobile ? styles.container : styles.containerDesktop}>
       <div className={styles.row}>
         <span>Esteban</span>
         <span>Molina</span>
@@ -34,7 +34,13 @@ export default function slidebar({
         estebanano.com
       </p>
       {isMobile ? <MainContent selectedTab={selectedTab} /> : null}
-      <p style={{ marginTop: '20px' }}>
+      <p
+        style={
+          isMobile
+            ? { marginLeft: '20px', marginRight: '20px' }
+            : { marginTop: '20px' }
+        }
+      >
         Diseñador gráfico graduado de la Colegiatura, con un enfoque en
         ilustración, desarrollo de identidad visual y dirección de arte.
       </p>

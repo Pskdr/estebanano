@@ -7,6 +7,19 @@
     background-color: #FFF2BF;
     align-items: center;
 }
+.containerDesktop {
+    position: fixed;
+    left: 0;
+    margin-left: 1%;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    height: 100vh;
+    /* Ocupa toda la pantalla */
+    background-color: #FFF2BF;
+    align-items: center;
+        
+}
 
 .row {
     display: flex;
@@ -63,8 +76,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: #FFF2BF;
 }
 

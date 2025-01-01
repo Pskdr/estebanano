@@ -29,7 +29,14 @@ export default function slidebar({
         <span>Esteban</span>
         <span>Molina</span>
       </div>
-      <img src={slidelogo.src} alt='slidelogo' style={{ marginTop: '40px' }} />
+      <img
+        src={slidelogo.src}
+        alt='slidelogo'
+        className={styles.img}
+        onClick={() => {
+          setSelectedTab('Contact');
+        }}
+      />
       <p style={{ marginTop: '10px', fontSize: '25px', fontWeight: '550' }}>
         estebanano.com
       </p>
@@ -37,7 +44,7 @@ export default function slidebar({
       <p
         style={
           isMobile
-            ? { marginLeft: '20px', marginRight: '20px' }
+            ? { marginLeft: '20px', marginRight: '20px', maxWidth: '300px' }
             : { marginTop: '20px' }
         }
       >

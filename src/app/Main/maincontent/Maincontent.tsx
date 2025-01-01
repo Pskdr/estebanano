@@ -48,6 +48,7 @@ import chef2 from '../../images/chef/chef2.png';
 import chef3 from '../../images/chef/chef3.png';
 import chef4 from '../../images/chef/chef4.png';
 import chef5 from '../../images/chef/chef5.png';
+import Contact from '../contact/Contact';
 
 type MainContentProps = {
   selectedTab: string;
@@ -146,6 +147,7 @@ En esta ocasión, tuve el honor de crear una colección de merchandising inspira
           text4='En esta ocasión, tuve el honor de crear una colección de merchandising inspirada en varios cócteles que pueden ser preparados utilizando los productos de Juniper. Siempre manteniendo como objetivo principal un atractivo visual sólido y preguntándome a mí mismo: "¿Qué me gustaría llevar de esta marca?".'
         />
       )}
+      {selectedTab === 'Contact' && <Contact />}
     </div>
   );
 };

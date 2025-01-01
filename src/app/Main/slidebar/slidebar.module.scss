@@ -92,12 +92,14 @@
     text-decoration: none;
     color:black;
     font-weight: bold;
-    /* Azul para los enlaces */
     transition: color 0.3s ease;
 }
 
 .links a:hover {
     text-decoration: underline;
-    
-    /* Cambia a un tono más oscuro al pasar el cursor */
+}
+
+.img{
+    cursor: pointer;
+    margin-top: 40px;
 }

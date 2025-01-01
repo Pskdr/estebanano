@@ -1,0 +1,41 @@
+.container {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* Ocupa toda la pantalla */
+    background-color: #FFF2BF;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* Ajusta según tu diseño */
+
+}
+
+/* styles/ImageGrid.module.css */
+.desktopGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Máximo 3 columnas */
+    gap: 10px;
+    padding: 20px;
+}
+
+.mobileGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Solo 1 columna en mobile */
+    gap: 10px;
+}
+
+.imageWrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -64,12 +64,13 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-top: 20px;
     background-color: #FFF2BF;
 }
 
 .links {
     display: flex;
-    gap: 60px;
+    gap: 40px;
     /* Espaciado entre los enlaces */
     font-family: 'Satoshi', sans-serif;
     font-size: 18px;

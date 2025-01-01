@@ -45,7 +45,7 @@ export default function Hotline({ images, text1, text2, text3, text4 }: Props) {
             <img
               src={image.src}
               alt={`Image ${image.src + 1}`}
-              style={isMobile ? { maxWidth: '350px' } : {}}
+              style={isMobile ? { maxWidth: '350px' } : { minWidth: '900px' }}
             />
           </div>
         ))}

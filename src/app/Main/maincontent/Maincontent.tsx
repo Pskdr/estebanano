@@ -110,7 +110,7 @@ const MainContent = ({ selectedTab }: MainContentProps) => {
       {selectedTab === 'El fungi world' && (
         <Hotline
           images={funguis}
-          text1='El fungui world'
+          text1='El fungi world'
           text2='Les presento el FUNGI WORD, universo visual creado para acompañar una nueva hamburguesa de pollo con diferentes tipos de hongos que sacaria una marca de hamburguesas artesanales llamada Chef burger.'
           text3='Ilustración, Diseño de personajes.'
           text4='La inspiración para este universo proviene de los icónicos posters y publicidades psicodélicas de los años 60 y 70. El diseño se sumerge en una atmósfera retro y colorida, que resalta la creatividad y el sabor único de esta hamburguesa especial.'

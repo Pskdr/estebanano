@@ -23,12 +23,12 @@ export default function Salpicon({ images }: Props) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.row}>
+      <div className={isMobile ? styles.none : styles.row}>
         <p style={{ fontSize: '40px', fontWeight: 'bold' }}>
           Salpicón de marcas
         </p>
 
-        <p style={{ marginTop: '10px', maxWidth: '40%' }}>
+        <p style={isMobile ? {} : { marginTop: '10px', maxWidth: '40%' }}>
           <span style={{ fontWeight: 'bold' }}>Definición de Salpicón:</span>{' '}
           Postre Antioqueño conformado por una gran variedad de frutas dulces,
           entre ellas el <span style={{ fontWeight: 'bold' }}>banano</span>, la
@@ -41,7 +41,11 @@ export default function Salpicon({ images }: Props) {
       >
         {images.map((image) => (
           <div key={image.src} className={styles.imageWrapper}>
-            <img src={image.src} alt={`Image ${image.src + 1}`} />
+            <img
+              src={image.src}
+              alt={`Image ${image.src + 1}`}
+              style={isMobile ? { maxWidth: '300px' } : {}}
+            />
           </div>
         ))}
       </div>

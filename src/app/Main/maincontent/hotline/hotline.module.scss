@@ -18,6 +18,7 @@
 
 /* styles/ImageGrid.module.css */
 .desktopGrid {
+    width: 100%;
     display: grid;
     /* Máximo 3 columnas */
     gap: 10px;

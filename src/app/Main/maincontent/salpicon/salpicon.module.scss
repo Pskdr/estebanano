@@ -18,15 +18,14 @@
 
 /* styles/ImageGrid.module.css */
 .desktopGrid {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     /* Máximo 3 columnas */
     gap: 10px;
-    padding: 20px;
 }
 
 .mobileGrid {
-    display: grid;
     grid-template-columns: 1fr;
     /* Solo 1 columna en mobile */
     gap: 10px;

@@ -27,14 +27,14 @@ export default function Hotline({ images, text1, text2, text3, text4 }: Props) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.row}>
+      <div className={isMobile ? styles.none : styles.row}>
         <p style={{ fontSize: '40px', fontWeight: 'bold' }}>{text1}</p>
 
-        <p style={{ maxWidth: '40%' }}>{text2}</p>
+        <p style={isMobile ? {} : { maxWidth: '40%' }}>{text2}</p>
       </div>
-      <div className={styles.row}>
+      <div className={isMobile ? styles.none : styles.row}>
         <p>{text3}</p>
-        <p style={{ maxWidth: '40%' }}>{text4}</p>
+        <p style={isMobile ? {} : { maxWidth: '40%' }}>{text4}</p>
       </div>
       <div
         className={isMobile ? styles.mobileGrid : styles.desktopGrid}
@@ -45,7 +45,7 @@ export default function Hotline({ images, text1, text2, text3, text4 }: Props) {
             <img
               src={image.src}
               alt={`Image ${image.src + 1}`}
-              style={isMobile ? { maxWidth: '350px' } : { minWidth: '900px' }}
+              style={isMobile ? { maxWidth: '300px' } : { minWidth: '900px' }}
             />
           </div>
         ))}

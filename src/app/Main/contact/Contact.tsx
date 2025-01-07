@@ -20,6 +20,10 @@ export default function Contact({}: Props) {
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const handleEmailClick = (email: string) => {
+    window.location.href = `mailto:${email}?subject=Consulta&body=Hola, me gustaría hablar contigo sobre un proyecto.`;
+  };
   return (
     <div>
       {isMobile ? (
@@ -43,10 +47,23 @@ export default function Contact({}: Props) {
           </div>
           <img src={estebanmolina.src} style={{ maxWidth: '300px' }} />
           <div className={styles.containelinks}>
-            <p className={styles.categoryButton}>
+            <p
+              className={styles.categoryButton}
+              onClick={() => {
+                handleEmailClick('Hola@estebanano.com');
+              }}
+            >
               E-mail <span className={styles.arrow}>➔</span>
             </p>
-            <p className={styles.categoryButton}>
+            <p
+              className={styles.categoryButton}
+              onClick={() => {
+                window.open(
+                  'https://www.linkedin.com/in/esteban-molina-3a43b4199/',
+                  '_blank'
+                );
+              }}
+            >
               Linkedin <span className={styles.arrow}>➔</span>
             </p>
           </div>
@@ -71,10 +88,23 @@ export default function Contact({}: Props) {
                     <p>Egresado de la Colegiatura Colombiana.</p>
                     <p>Medellín Colombia.</p>
                     <div className={styles.containelinks}>
-                      <p className={styles.categoryButton}>
+                      <p
+                        className={styles.categoryButton}
+                        onClick={() => {
+                          handleEmailClick('Hola@estebanano.com');
+                        }}
+                      >
                         E-mail <span className={styles.arrow}>➔</span>
                       </p>
-                      <p className={styles.categoryButton}>
+                      <p
+                        className={styles.categoryButton}
+                        onClick={() => {
+                          window.open(
+                            'https://www.linkedin.com/in/esteban-molina-3a43b4199/',
+                            '_blank'
+                          );
+                        }}
+                      >
                         Linkedin <span className={styles.arrow}>➔</span>
                       </p>
                     </div>
